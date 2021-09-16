@@ -388,6 +388,7 @@ aside {
 
   header nav {
     width: 23%;
+    /* when 20%, nav text too close together */
   }
 
   header nav ul {
@@ -456,9 +457,7 @@ aside {
     width: 100%;
     /* When I set width to 25% it centers it... */
   }
-  /* =========================================================================
-    About page
-    ======================================================================= */
+  /* ======================== About page - tablet ======================== */
   
   .mission-content {
     display: flex;
@@ -480,9 +479,7 @@ aside {
     justify-content: space-between;
     align-items: flex-start;
   }
-/* =========================================================================
-    FAQ page
-    ======================================================================= */
+  /* ======================== FAQ page - tablet ======================== */
 
   .faq .content-wrapper {
     justify-content: space-between;
@@ -497,8 +494,59 @@ aside {
   }
 }
 
+/* ======================== DESKTOP BREAK ======================== */
+
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here */
+
+  /* General styles */
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* Hero */
+  .hero-area h1 {
+    width: 60%;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* Features */
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* Reviews */
+  .reviews article div {
+    width: 42%;
+  }
+
+  /* ======================== About page - desktop ======================== */
+
+  .mission h2, 
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+  
+  /* ======================== FAQ page - desktop ======================== */
+
+  .faq h2 {
+    width: 100%;
+  }
+
 }
 
 @media print,
