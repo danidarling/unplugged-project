@@ -102,6 +102,7 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
 }
 
 a {
@@ -113,6 +114,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3, 
@@ -551,7 +553,7 @@ input[type=button] {
   }
 
   header nav {
-    width: 25%;
+    width: 30%;
     /* 20% suggested */
   }
 
@@ -605,6 +607,10 @@ input[type=button] {
     width: 62%;
   }
 
+  .features i {
+    margin-bottom: 30px;
+  }
+
   /* Reviews */
   .reviews article {
     display: flex;
@@ -649,6 +655,11 @@ input[type=button] {
 
   footer p {
     line-height: 1.285;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
